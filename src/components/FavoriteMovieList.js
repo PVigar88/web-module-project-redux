@@ -3,11 +3,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { removeFavorite } from "../actions/favoriteActions";
-//import { useHistory } from "react-router-dom";
 
 const FavoriteMovieList = (props) => {
   //const favorites = [];
-  //const { push } = useHistory();
+
   const handleRemoveFavorite = (id) => {
     props.removeFavorite(id);
   };

@@ -19,7 +19,6 @@ const reducer = (state = initialState, action) => {
     case ADD_FAVORITE:
       const newFavorite = {
         ...action.payload,
-        id: Date.now(),
       };
       return {
         ...state,
@@ -27,6 +26,7 @@ const reducer = (state = initialState, action) => {
       };
     case REMOVE_FAVORITE:
       return {
+        ...state,
         favorites: state.favorites.filter((item) => action.payload !== item.id),
       };
 
