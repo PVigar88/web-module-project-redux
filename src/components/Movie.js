@@ -61,13 +61,11 @@ const Movie = (props) => {
               </section>
 
               <section>
-                <span className="favorite">
-                  <input
-                    type="button"
-                    className="m-2 btn btn-dark"
-                    value="Favorite"
-                    onClick={() => handleAddFavorite(movie)}
-                  />
+                <span
+                  className="m-2 btn btn-dark"
+                  onClick={() => handleAddFavorite(movie)}
+                >
+                  Favorite
                 </span>
                 <span className="delete">
                   <input

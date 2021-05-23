@@ -18,7 +18,7 @@ const MovieHeader = (props) => {
           <h2>{props.appTitle}</h2>
         </div>
         <div className="col-sm-6 headerBar">
-          <div className="btn btn-sm btn-primary">
+          <div>
             <span>
               {props.displayFavorites ? (
                 <input

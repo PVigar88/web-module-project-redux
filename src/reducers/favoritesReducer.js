@@ -6,7 +6,7 @@ import {
 
 const initialState = {
   favorites: [],
-  displayFavorites: false,
+  displayFavorites: true,
 };
 
 const reducer = (state = initialState, action) => {

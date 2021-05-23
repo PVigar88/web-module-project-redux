@@ -24,13 +24,11 @@ const FavoriteMovieList = (props) => {
             >
               {movie.title}
               <span>
-                <span className="material-icons">
-                  <input
-                    type="button"
-                    className="material-icons"
-                    value="remove_circle"
-                    onClick={() => handleRemoveFavorite(movie.id)}
-                  />
+                <span
+                  className="material-icons"
+                  onClick={() => handleRemoveFavorite(movie.id)}
+                >
+                  remove_circle
                 </span>
               </span>
             </Link>
